@@ -8,30 +8,30 @@ img     {display: block; max-width: 100%;}
 a       {text-decoration: none; color: #000;}
 
 /*컬러 사용 : #b33238  #fefefe  #644e4d(bottom아이콘색)  #362f2d(로고글씨색)*/
-#layout {width:600px; max-width: 1200px; min-width: 200px; margin: auto;
+#layout {width:400px; max-width: 800px; min-width: 200px; margin: auto;
          background: #fefefe; border: 1px solid red;
 }
 
 /*상단(header)부분*/
-header  {height: 170px; /*position: relative;*/}
-header h1 img {width: 30%; max-width: 250px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
-               margin: 80px auto 0 auto;
+header  {height: 40px; /*position: relative;*/}
+header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
+               margin: 60px auto 0 auto;
 }
 
 /*메인(main)부분*/
-main    {height: 900px; width: auto; margin-top: -110px;
+main    {height: 900px; width: auto;
          background: url('../images/indexback.png') no-repeat; background-size: contain;
 }
 /*#top>img {width: 1200px; margin-top: -75px;}*/
-#top    {padding-top: 120px; display: inline; display: flex; justify-content: center;}
-#top>div  {margin: 10px 10px 20px 10px; border-radius: 50px; width: 170px; height: 60px; text-align: center;}
-#top a {font: 20pt/210% '맑은 고딕', sans-serif; height: 32px; letter-spacing: -1px; font-weight: 500;
+#top    {padding-top: 17%; display: inline; display: flex; justify-content: center;}
+#top>div  {margin: 5% 2% 3% 2%; border-radius: 50px; width: 26%; height: 35px; text-align: center;}
+#top a {font: 12pt/190% '맑은 고딕', sans-serif; height: 32px; letter-spacing: -1px; font-weight: 500;
         display: inline-block; padding-top: 1px; color: black;}
 #login {background: #fefefe;}
 #join  {background: none; border: 3px solid #fefefe;}
 #join a {height: 28px; margin-top: -2.5px; color: #fefefe;}
 
-#middle {width: 90%; height: 55%; background: linear-gradient(-45deg, #f2f2f2, #fefefe);
+#middle {width: 90%; height: 40%; background: linear-gradient(-45deg, #f2f2f2, #fefefe);
          border-radius: 25px; box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.2);
          margin: 0 auto; display: flex; flex-wrap: wrap; text-align: center;
 }
@@ -41,14 +41,14 @@ main    {height: 900px; width: auto; margin-top: -110px;
 #middle>div:nth-child(2) {margin-top: 6%; margin-left: 6%; background: #fff;}
 #middle>div:nth-child(3) {margin-top: 0; margin-left: 6%; background: #fff;}
 #middle>div:nth-child(4) {margin-top: 0; margin-left: 6%; background: #fff;}
-#middle a   {display: inline-block; font-weight: bold; font-size: 2.2rem; letter-spacing: -1px;
+#middle a   {display: inline-block; font-weight: bold; font-size: 1.5rem; letter-spacing: -1px;
              width: 100%; height: 100%; padding-top: 40%; background: none;
 }
 
-#bottom {height: 140px; width: 80%; margin: 38px auto; text-align: center;
+#bottom {height: 10%; width: 80%; margin: 38px auto; text-align: center;
          display: flex; justify-content: space-evenly; border: 2px solid red;
 }
-#bottom>div {width: 25%; font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;
+#bottom>div {width: 25%; font-size: 1rem; font-weight: bold; letter-spacing: -1px;
              border: 2px solid gold; padding-top: 20%;
 }
 
@@ -57,11 +57,15 @@ main    {height: 900px; width: auto; margin-top: -110px;
 #slide>div {position: fixed; bottom: 6%; display: flex; width: 2400px;}
 #slide img {width: 600px;} 아래는 고쳐주신 것*/
 #slide  {position: fixed; bottom: 6%; }
-#slide>div {display: flex; width: 1800px; position: relative; left: -600px;}
-#slide img {width: 600px;}
+#slide>div {display: flex; width: 1200px; position: relative; left: -400px;}
+#slide img {width: 400px;}
 
 /*이미지 하단에 블릿(동그라미)*/
-#circle {bottom: 7%; left: 44.5%; position: fixed; display: flex; width: 100px; justify-content: space-evenly;}
-#circle div {border:2px solid rgba(0,0,0,0.5); border-radius: 50%; width: 14px; height: 14px;
+#circle {bottom: 7%; left: 42%; position: fixed; display: flex; width: 70px; justify-content: space-evenly;}
+#circle div {border:2px solid rgba(0,0,0,0.5); border-radius: 50%; width: 10px; height: 10px;
              background: white; margin: 2px;}
 #circle div.gray {background: #565656;}
+
+@media (min-width: 768px) {
+
+} 
