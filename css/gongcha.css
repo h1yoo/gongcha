@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+*   {margin: 0; padding: 0; box-sizing: border-box;}
+html, body  {font: 10pt/180% '맑은 고딕', sans-serif;  color: black;}
+/*전체적으로는 나눔고딕체 사용하고, 로딩화면이랑 로그인화면에는 나눔명조체 사용
+{font: 10pt/180% 'Nanum Myeongjo', serif;} */
+img     {display: block; max-width: 100%;}
+a       {text-decoration: none; color: #000;}
+
+/*컬러 사용 : #b33238  #fefefe  #644e4d(bottom아이콘색)  #362f2d(로고글씨색)*/
+#layout {width:800px; max-width: 1200px; min-width: 200px; margin: auto;
+         background: #fefefe; border: 1px solid red;
+}
+
+/*상단(header)부분*/
+header  {height: 200px; /*position: relative;*/}
+header h1 img {width: 30%; max-width: 250px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
+               margin: 100px auto 0 auto;
+}
+
+/*메인(main)부분*/
+main    {height: 1200px; width: auto; margin-top: -120px;
+         background: url('../images/indexback.png') no-repeat; background-size: contain;
+}
+/*#top>img {width: 1200px; margin-top: -75px;}*/
+#top    {padding-top: 160px; display: inline; display: flex; justify-content: center;}
+#top>div  {margin: 10px 15px 20px 15px; border-radius: 50px; width: 170px; height: 60px; text-align: center;}
+#top a {font: 20pt/210% '맑은 고딕', sans-serif; height: 32px; letter-spacing: -1px; font-weight: 500;
+        display: inline-block; padding-top: 1px; color: black;}
+#login {background: #fefefe;}
+#join  {background: none; border: 3px solid #fefefe;}
+#join a {height: 28px; margin-top: -2.5px; color: #fefefe;}
+
+#middle {width: 90%; height: 55%; background: linear-gradient(-45deg, #f2f2f2, #fefefe);
+         border-radius: 25px; box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.2);
+         margin: 0 auto; display: flex; flex-wrap: wrap; text-align: center;
+}
+#middle>div {width: 42%; height: 40%; padding: 0;  border-radius: 25px;}
+#middle>div:nth-child(1) {margin-top: 38px; margin-left: 38px; box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.2);
+                          background: linear-gradient(135deg, #f2f2f2, #fefefe);}
+#middle>div:nth-child(2) {margin-top: 38px; margin-left: 38px; background: #fff;}
+#middle>div:nth-child(3) {margin-top: 0px; margin-left: 38px; background: #fff;}
+#middle>div:nth-child(4) {margin-top: 0px; margin-left: 38px; background: #fff;}
+#middle a   {margin-top: 40%; display: inline-block; font-weight: bold; font-size: 2.2rem; letter-spacing: -1px;}
+
+#bottom {height: 140px; width: 80%; margin: 45px auto; text-align: center;
+         display: flex; justify-content: space-evenly; border: 2px solid red;
+}
+#bottom>div {width: 25%; font-size: 1.7rem; font-weight: bold; letter-spacing: -1px; margin-top: 30px;}
+
+/*슬라이드 부분 내가 잘못한 것
+#slide  {position: relative; left: -600px;}
+#slide>div {position: fixed; bottom: 6%; display: flex; width: 2400px;}
+#slide img {width: 600px;} 아래는 고쳐주신 것*/
+#slide  {position: fixed; bottom: 6%; }
+#slide>div {display: flex; width: 2400px; position: relative; left: -800px;}
+#slide img {width: 800px;}
+
+/*이미지 하단에 블릿(동그라미)*/
+#circle {bottom: 7%; left: 44.5%; position: fixed; display: flex; width: 100px; justify-content: space-evenly;}
+#circle div {border:2px solid rgba(0,0,0,0.5); border-radius: 50%; width: 17px; height: 17px;
+             background: white; margin: 2px;}
+#circle div.gray {background: #565656;}
