@@ -9,7 +9,7 @@ a       {text-decoration: none; color: #000;}
 
 /*컬러 사용 : #b33238  #fefefe  #644e4d(bottom아이콘색)  #362f2d(로고글씨색)*/
 #layout {width:400px; max-width: 800px; min-width: 200px; margin: auto;
-         background: #fefefe; border: 1px solid red;
+         background: #fefefe; border: 1px solid red; overflow: hidden;
 }
 
 /*상단(header)부분*/
