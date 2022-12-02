@@ -9,13 +9,13 @@ a       {text-decoration: none; color: #000;}
 
 /*컬러 사용 : #b33238  #fefefe  #644e4d(bottom아이콘색)  #362f2d(로고글씨색)*/
 #layout {width:400px; max-width: 800px; min-width: 200px; margin: auto;
-         background: #fefefe; border: 1px solid red;
+         background: #fefefe; border: 1px solid red; overflow: hidden;
 }
 
 /*상단(header)부분*/
-header  {height: 13%; width: 400px; max-width: 100%; position: fixed; top:0; background: #fefefe; z-index: 1;}
+header  {height: 13%; max-height: 100px; width: 400px; max-width: 100%; position: fixed; top:0; background: #fefefe; z-index: 1;}
 header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
-               margin: 60px auto 10px auto;
+               margin: 60px auto 0 auto;
 }
 
 /*메인(main)부분*/
