@@ -190,12 +190,20 @@ main    {height: 850px; width: auto; margin-top: 24%;
 #slide  {position: relative; left: -600px;}
 #slide>div {position: fixed; bottom: 6%; display: flex; width: 2400px;}
 #slide img {width: 600px;} 아래는 고쳐주신 것*/
-#slide  {position: fixed; bottom: 3%; z-index: 2;}
+#slide  {position: fixed; bottom: 3%; z-index: 3;}
 #slide>div {display: flex; width: 1500px; position: relative; left: -500px;}
 #slide img {width: 500px;}
 
 /*이미지 하단에 블릿(동그라미)*/
-#circle {bottom: 7%; left: 42%; position: fixed; display: flex; width: 70px; justify-content: space-evenly;}
+#circle {
+        bottom: 4%; 
+        left: 42.5%; 
+        position: fixed; 
+        display: flex;
+        width: 70px; 
+        justify-content: space-evenly;
+        z-index: 4;
+}
 #circle div {border:2px solid rgba(0,0,0,0.5); border-radius: 50%; width: 10px; height: 10px;
              background: white; margin: 2px;}
 #circle div.gray {background: #565656;}
