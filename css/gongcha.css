@@ -27,6 +27,7 @@ header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absol
 /*메인(main)부분*/
 main    {height: 850px; width: auto; margin-top: 24%;
          background: url('../images/indexback.png') no-repeat top; background-size: contain;
+         overflow: hidden;
 }
 /*#top>img {width: 1200px; margin-top: -75px;}*/
 #top    {padding-top: 17%; display: inline; display: flex; justify-content: center;}
@@ -124,9 +125,9 @@ main    {height: 850px; width: auto; margin-top: 24%;
 /*팝업*/
 #popup {
         position: fixed;
-        top: 44%;
-        left: 12.3%;
-        width: 75%;
+        top: 42%;
+        left: 15%;
+        width: 350px;
         height: 240px;
         background: white;
         border-radius: 20px;
@@ -144,6 +145,10 @@ main    {height: 850px; width: auto; margin-top: 24%;
 #popup section.heading span {
         font-size: 2.2rem;
         font-weight: 600;
+        padding: 10px;
+        margin-top: -20px;
+        margin-bottom: -5px;
+        border: 2px solid red;
 }
 #popup p {
         padding: 35px 0 25px 0;
