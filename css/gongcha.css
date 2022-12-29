@@ -12,6 +12,10 @@ a       {text-decoration: none; color: #000;}
          position: relative;
 }
 
+.ui-loader-default {
+        display: none;
+}
+
 /*상단(header)부분*/
 header  {height: 150px; max-height: 100px; width: 500px; max-width: 100%;
          position: fixed; top:0; background: #fefefe; z-index: 2;
@@ -167,7 +171,7 @@ main    {height: 850px; width: auto; margin-top: 24%;
 #slide  {position: relative; left: -600px;}
 #slide>div {position: fixed; bottom: 6%; display: flex; width: 2400px;}
 #slide img {width: 600px;} 아래는 고쳐주신 것*/
-#slide  {position: fixed; bottom: 6%; z-index: 2;}
+#slide  {position: fixed; bottom: 3%; z-index: 2;}
 #slide>div {display: flex; width: 1500px; position: relative; left: -500px;}
 #slide img {width: 500px;}
 
