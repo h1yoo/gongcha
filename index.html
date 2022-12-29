@@ -2,12 +2,12 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
         <title>gongcha</title>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="js/gongcha.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0">
 		<link rel="stylesheet" href="css/gongcha.css">
     </head>
@@ -19,7 +19,7 @@
             <main>
                 <div id="top">
                     <div id="login">
-                        <a href="#">로그인</a>
+                        <a href="glogin.html">로그인</a>
                     </div>
                     <div id="join">
                         <a href="#">회원가입</a>
@@ -45,9 +45,11 @@
                     </div>
                 </nav>
                 <div id="bottom">
-                    <div><a href="#">기프트샵</a></div>
-                    <div><a href="#">매장찾기</a></div>
-                    <div><a href="#">이벤트&뉴스</a></div>
+                    <div>
+                        <div><a href="#"><img src="images/giftshop.png">기프트샵</a></div>
+                        <div><a href="#"><img src="images/findshop.png">매장찾기</a></div>
+                        <div><a href="#"><img src="images/event.png">이벤트&뉴스</a></div>
+                    </div>
                 </div>
                 <div id="slide">
                     <div>
@@ -62,6 +64,17 @@
                     <div></div>  <!--이미지가 3개라서 div도 세 개. 이미지 밑에 뜨는 동그라미니까-->
                 </div>
             </main>
+            <div id="popup">
+                <section class="heading">
+                    <h1>알림</h1>
+                    <span class="material-symbols-sharp">close</span>
+                </section>
+                <p>로그인 후 이용할 수 있습니다.</p>
+                <div class="popup-btn">
+                    <span>확인</span>
+                </div>
+            </div>
+            <div id="black"></div>
         </div>
     </body>
 </html>
