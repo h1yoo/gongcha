@@ -2,18 +2,18 @@
 
 *   {margin: 0; padding: 0; box-sizing: border-box;}
 html, body  {font: 10pt/180% '맑은 고딕', sans-serif;  color: black;}
-/*전체적으로는 나눔고딕체 사용하고, 로딩화면이랑 로그인화면에는 나눔명조체 사용
-{font: 10pt/180% 'Nanum Myeongjo', serif;} */
+/* {font: 10pt/180% 'Nanum Myeongjo', serif;} 나눔명조체*/
 img     {display: block; max-width: 100%;}
 a       {text-decoration: none; color: #000;}
 
 /*컬러 사용 : #b33238  #fefefe  #644e4d(bottom아이콘색)  #362f2d(로고글씨색)*/
-#layout {width:400px; max-width: 800px; min-width: 200px; margin: auto;
-         background: #fefefe; border: 1px solid red; overflow: hidden;
+#layout {width:500px; max-width: 800px; min-width: 200px; margin: auto;
+         height: 1000px; background: #fefefe; overflow: hidden;
+         position: relative;
 }
 
 /*상단(header)부분*/
-header  {height: 13%; max-height: 100px; width: 400px; max-width: 100%;
+header  {height: 150px; max-height: 100px; width: 500px; max-width: 100%;
          position: fixed; top:0; background: #fefefe; z-index: 2;
 }
 header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
@@ -21,19 +21,27 @@ header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absol
 }
 
 /*메인(main)부분*/
-main    {height: 900px; width: auto; margin-top: 24%;
-         background: url('../images/indexback.png') no-repeat; background-size: contain;
+main    {height: 850px; width: auto; margin-top: 24%;
+         background: url('../images/indexback.png') no-repeat top; background-size: contain;
 }
 /*#top>img {width: 1200px; margin-top: -75px;}*/
 #top    {padding-top: 17%; display: inline; display: flex; justify-content: center;}
-#top>div  {margin: 5% 2% 3% 2%; border-radius: 50px; width: 26%; height: 35px; text-align: center;}
-#top a {font: 12pt/190% '맑은 고딕', sans-serif; height: 32px; letter-spacing: -1px; font-weight: 500;
-        display: inline-block; padding-top: 1px; color: black;}
+#top>div  {margin: 5% 2% 3% 2%; border-radius: 50px; width: 26%; height: 45px; text-align: center;}
+#top a {
+        font: 12pt/190% '맑은 고딕', sans-serif;
+        width: 100%;
+        height: 100%;
+        letter-spacing: -1px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: inline-block;
+        padding-top: 5px;
+        color: black;}
 #login {background: #fefefe;}
 #join  {background: none; border: 3px solid #fefefe;}
-#join a {height: 28px; margin-top: -2.5px; color: #fefefe;}
+#join a {margin-top: -2.5px; color: #fefefe;}
 
-#middle {width: 90%; height: 40%; background: linear-gradient(-45deg, #f2f2f2, #fefefe);
+#middle {width: 85%; height:50%; background: linear-gradient(-45deg, #f2f2f2, #fefefe);
          border-radius: 25px; box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.2);
          margin: 0 auto; display: flex; flex-wrap: wrap; text-align: center;
 }
@@ -57,11 +65,102 @@ main    {height: 900px; width: auto; margin-top: 24%;
 #middle>div:nth-child(3)>a {padding-top: 63%;}
 #middle>div:nth-child(4)>a {padding-top: 63%;}
 
-#bottom {height: 10%; width: 80%; margin: 38px auto; text-align: center;
-         display: flex; justify-content: space-evenly; border: 2px solid red;
+#bottom {
+        height: 12%; width: 80%;
+        margin: 30px auto;
+        text-align: center;
+        padding: 0;
 }
-#bottom>div {width: 25%; font-size: 1rem; font-weight: bold; letter-spacing: -1px;
-             border: 2px solid gold; padding-top: 20%;
+#bottom>div {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+}
+#bottom>div>div {
+        width: 30%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: -1px;
+}
+#bottom>div>div img {
+        width: 30pt;
+        max-width: 100%;
+        margin: 4px auto 0 auto;
+}
+#bottom>div>div:not(:nth-child(2)) img {
+        width: 45pt;
+}
+#bottom>div>div:nth-child(2) img {
+        margin: 6.5pt auto 3pt auto;
+}
+#bottom>div>div:first-child img {
+        margin-bottom: 3.5pt;
+}
+#bottom>div>div:last-child img {
+        margin-top: 12px;
+        margin-bottom: 6pt;
+}
+
+/*팝업*/
+#popup {
+        position: fixed;
+        top: 44%;
+        left: 12.3%;
+        width: 75%;
+        height: 240px;
+        background: white;
+        border-radius: 20px;
+        z-index: 10;
+        display: none;
+}
+#popup section.heading {
+        width: 85%;
+        margin: 0 auto;
+        border-bottom: 2px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 5px 15px 2px;
+}
+#popup section.heading span {
+        font-size: 2.2rem;
+        font-weight: 600;
+}
+#popup p {
+        padding: 35px 0 25px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+}
+#popup .popup-btn {
+        background: #35302C;
+        width: 120px;
+        height: 42px;
+        border-radius: 50px;
+        margin: auto;
+}
+#popup .popup-btn span {
+        color: #fff;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding-top: 8px;
+        cursor: pointer;
+        border-radius: 50px;
+}
+#black {
+        position: fixed;
+        width: 100%;
+        height: 99.9%;
+        top: 0;
+        z-index: 5;
+        background: rgba(0,0,0,0.5);
+        display: none;
 }
 
 /*슬라이드 부분 내가 잘못한 것
@@ -69,8 +168,8 @@ main    {height: 900px; width: auto; margin-top: 24%;
 #slide>div {position: fixed; bottom: 6%; display: flex; width: 2400px;}
 #slide img {width: 600px;} 아래는 고쳐주신 것*/
 #slide  {position: fixed; bottom: 6%; z-index: 2;}
-#slide>div {display: flex; width: 1200px; position: relative; left: -400px;}
-#slide img {width: 400px;}
+#slide>div {display: flex; width: 1500px; position: relative; left: -500px;}
+#slide img {width: 500px;}
 
 /*이미지 하단에 블릿(동그라미)*/
 #circle {bottom: 7%; left: 42%; position: fixed; display: flex; width: 70px; justify-content: space-evenly;}
@@ -78,8 +177,3 @@ main    {height: 900px; width: auto; margin-top: 24%;
              background: white; margin: 2px;}
 #circle div.gray {background: #565656;}
 
-
-/*****너비가 768px 이상인 기기에서 볼 때*****/
-@media (min-width: 768px) {
-
-} 
