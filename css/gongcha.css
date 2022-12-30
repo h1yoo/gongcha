@@ -27,7 +27,7 @@ header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absol
 /*메인(main)부분*/
 main    {height: 850px; width: auto; margin-top: 24%;
          background: url('../images/indexback.png') no-repeat top; background-size: contain;
-         overflow: hidden;
+         border: 2px solid red;
 }
 /*#top>img {width: 1200px; margin-top: -75px;}*/
 #top    {padding-top: 17%; display: inline; display: flex; justify-content: center;}
@@ -189,7 +189,14 @@ main    {height: 850px; width: auto; margin-top: 24%;
 #slide  {position: relative; left: -600px;}
 #slide>div {position: fixed; bottom: 6%; display: flex; width: 2400px;}
 #slide img {width: 600px;} 아래는 고쳐주신 것*/
-#slide  {position: fixed; bottom: 3%; z-index: 3;}
+#slide  {
+        position: fixed;
+        bottom: 3%;
+        z-index: 3; 
+        width:500px; 
+        left: calc((100% - 500px) / 2);
+        overflow: hidden;
+}
 #slide>div {display: flex; width: 1500px; position: relative; left: -500px;}
 #slide img {width: 500px;}
 
