@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+html, body  {
+        font: 10pt/180% '맑은 고딕', sans-serif;
+        color: black; 
+        /*width: 500px; height: 100%;
+        html에 width 설정하면 margin:auto;해도 중앙정렬 안됨. html에는 width랑 height 설정 안하는 게 맞는 듯*/
+}
+html    {
+        -webkit-text-size-adjust: 100%; display: block;
+}
+body {
+        overflow: auto;
+        overflow-y: scroll;
+        letter-spacing: 0; line-height: 1.5;
+        font-family: '나눔고딕', sans-serif;
+}
+#layout {
+        width:500px; height: 100%; margin: auto;
+        background: #fefefe;
+        position: relative;
+}
+/*컬러 사용 : #b33238  #fefefe  #644e4d(bottom아이콘색)  #362f2d(로고글씨색)*/
+/*전체적으로는 나눔고딕체 사용하고, 로딩화면이랑 로그인화면에는 나눔명조체 사용
+{font: 10pt/180% 'Nanum Myeongjo', serif;} */
+*       {margin: 0; padding: 0; box-sizing: border-box;}
+img     {display: block; max-width: 100%;}
+a       {text-decoration: none; color: #000;}
+
+
+
+/*상단(header)부분*/
+header  {height: 140px; width: 500px;
+         position: fixed; top:0; background: #fefefe; z-index: 2;
+}
+header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
+               margin: 95px auto 0 auto;
+}
+header a.material-symbols-sharp {
+        margin: 95px auto 0 auto; position: absolute; display: inline-block;
+        font-size: 2rem; font-weight: 300;
+}
+header a:first-child {left: 20px;}
+header a.material-symbols-sharp:last-child {right: 20px; margin-top: -33px; font-size: 2.8rem;}
+
+/*아이디 패스워드 로그인부분*/
+#login  {
+        width: 500px; height: 900px;
+        margin-top: 140px; padding: 0 20px;
+        background: url('../images/loginbg.png') no-repeat top;
+        background-size: 100% 30%;
+        position: relative;
+}
+#login>div {
+        position: relative;
+        top: 350px;
+        left: 0;
+}
+#login>div>div {
+        position: absolute;
+        left: 0;
+        width: 100%;
+}
+#login .email {
+        top: 0;
+}
+#login .password {
+        top: 65px;
+}
+#login div input {
+        float: left;
+        height: 50px;
+        width: 100%;
+        border: 2px solid #ddd;
+        font-size: 1.3rem;
+        padding-left: 50px;
+}
+#login div input::placeholder {
+        color: #999;
+}
+#login span {
+        position: absolute;
+        left: 15px;
+        top: 13px;
+        color: #777;
+}
+#login form {
+        position: absolute;
+        top: 130px;
+        left: 5px;
+        width: 97%;
+}
+#login form input[type='checkbox'] {
+        float: left;
+        width: 20px;
+        border: 1px solid #ddd;
+        margin-right: 8px;
+        margin-top: -13px;
+}
+#login form label {
+        font-weight: 600;
+        font-size: 1.25rem;
+        font-family: '나눔고딕';
+}
+#login form > a {
+        float: right;
+        margin-top: -25px;
+        color: #666;
+        text-decoration: underline;
+        font-family: '나눔고딕';
+        font-size: 1.25rem;
+}
+#login .login-btn {
+        width: 100%;
+        margin-top: 180px;
+}
+#login .login-btn > a {
+        display: block;
+        width: 100%;
+        height: 70px;
+        border-radius: 100px;
+        background: #C32032;
+        text-align: center;
+        padding-top: 2.7%;
+        color: white;
+        font-weight: 600;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+}
+#login .login-btn .login-btn-under {
+        display: flex;
+        justify-content: space-around;
+}
+#login .login-btn .login-btn-under a {
+        font-size: 1.25rem;
+        font-weight: 400;
+}
+#login .login-btn .login-btn-under a:nth-child(2) {
+        margin: 0 -50px;
+        padding: 0 30px;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+}
