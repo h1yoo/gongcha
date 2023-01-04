@@ -25,7 +25,7 @@ header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absol
 }
 
 /*메인(main)부분*/
-main    {height: 850px; width: auto; margin-top: 140px;
+main    {height: 850px; width: 100%; margin-top: 140px;
          background: url('../images/indexback.png') no-repeat top; background-size: contain;
 }
 /*#top>img {width: 1200px; margin-top: -75px;}*/
@@ -202,7 +202,7 @@ main    {height: 850px; width: auto; margin-top: 140px;
 /*이미지 하단에 블릿(동그라미)*/
 #circle {
         bottom: 4%; 
-        left: 42.5%; 
+        left: 44%; 
         position: fixed; 
         display: flex;
         width: 70px; 
