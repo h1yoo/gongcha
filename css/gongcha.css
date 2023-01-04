@@ -18,7 +18,7 @@ a       {text-decoration: none; color: #000;}
 
 /*상단(header)부분*/
 header  {height: 140px; max-height: 100px; width: 500px; max-width: 100%;
-         position: fixed; top:0; background: #fefefe; z-index: 2;
+         position: fixed; top:0; background: #fefefe; z-index: 5;
 }
 header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
                margin: 95px auto 0 auto;
