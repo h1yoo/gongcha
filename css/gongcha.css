@@ -125,7 +125,7 @@ main    {height: 850px; width: auto; margin-top: 140px;
 #popup {
         position: fixed;
         top: 42%;
-        left: 15%;
+        left: calc( (100% - 350px) / 2 );
         width: 350px;
         height: 240px;
         background: white;
