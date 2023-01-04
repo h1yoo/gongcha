@@ -30,23 +30,23 @@ a       {text-decoration: none; color: #000;}
 
 
 /*상단(header)부분*/
-header  {height: 140px; width: 500px;
+header  {height: 135px; width: 500px;
          position: fixed; top:0; background: #fefefe; z-index: 2;
 }
 header h1 img {width: 30%; max-width: 220px; min-width: 120px; /*position: absolute; bottom: 12pt; left: 43%;*/
-               margin: 95px auto 0 auto;
+               margin: 85px auto 0 auto;
 }
 header a.material-symbols-sharp {
-        margin: 95px auto 0 auto; position: absolute; display: inline-block;
+        margin: 55px auto 0 auto; position: absolute; display: inline-block;
         font-size: 2rem; font-weight: 300;
 }
 header a:first-child {left: 20px;}
-header a.material-symbols-sharp:last-child {right: 20px; margin-top: -33px; font-size: 2.8rem;}
+header a.material-symbols-sharp:last-child {right: 20px; margin-top: -35px; font-size: 2.8rem;}
 
 /*아이디 패스워드 로그인부분*/
 #login  {
         width: 500px; height: 900px;
-        margin-top: 140px; padding: 0 20px;
+        margin-top: 135px; padding: 0 20px;
         background: url('../images/loginbg.png') no-repeat top;
         background-size: 100% 30%;
         position: relative;
